@@ -7,6 +7,7 @@ class Hero : public Entity
 {
 private:
     string nickname;
+    int tt;
 
 public:
     Hero() {}
