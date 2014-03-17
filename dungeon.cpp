@@ -3,6 +3,8 @@
 #include "orc.h"
 #include <typeinfo>
 
+using namespace std;
+
 bool Dungeon::spawn(string entityName, Entity* entity)
 {
     for(int i = 0; i < height; i++)

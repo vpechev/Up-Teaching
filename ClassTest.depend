@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1394752904 source:z:\niki si\c++ projects\up teaching\classtest\main.cpp
+1395082450 source:z:\niki si\c++ projects\up teaching\classtest\main.cpp
 	<iostream>
 	"entity.h"
 	"hero.h"
@@ -52,7 +52,7 @@
 	<string>
 	"entity.h"
 
-1394752795 source:z:\niki si\c++ projects\up teaching\classtest\dungeon.cpp
+1395082509 source:z:\niki si\c++ projects\up teaching\classtest\dungeon.cpp
 	"dungeon.h"
 	"hero.h"
 	"orc.h"
