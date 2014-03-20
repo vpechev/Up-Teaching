@@ -23,10 +23,38 @@ bool Dungeon::spawn(string entityName, Entity* entity)
                     dungeonMap[i][j] = 'O';
                 }
 
+                entity->x = j;
+                entity->y = i;
                 return true;
             }
         }
     }
 
     return false;
+}
+
+void Dungeon::move(char dir, Entity* entity)
+{
+    switch(dir)
+    {
+    case 'u':
+
+        if(dungeonMap[entity->x][entity->y-1] == '.')
+        {
+            dungeonMap[entity->y-1][entity->x] = dungeonMap[entity->y][entity->x];
+            dungeonMap[entity->y][entity->x] = '.';
+            entity->y -= 1;
+        }
+        break;
+    case 'd':
+
+        if(dungeonMap[entity->y+1][entity->x] == '.')
+        {
+            dungeonMap[entity->y+1][entity->x] = dungeonMap[entity->y][entity->x];
+            dungeonMap[entity->y][entity->x] = '.';
+            entity->y += 1;
+        }
+        break;
+
+    }
 }

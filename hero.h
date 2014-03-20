@@ -19,7 +19,7 @@ public:
         this->nickname = nickname;
     }
 
-    string instanceOf()
+    string instanceOf() const
     {
         return "hero";
     }

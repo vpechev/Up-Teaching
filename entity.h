@@ -9,9 +9,10 @@ using namespace std;
 class Entity
 {
 public:
+    Weapon weapon;
     string name;
     float health;
-    Weapon weapon;
+    int x, y;
     bool isEquipped = false;
 
     Entity() {}
@@ -20,6 +21,8 @@ public:
     {
         this->name = name;
         this->health = health;
+        x = 0;
+        y = 0;
     }
 
     float getHealth();
@@ -30,7 +33,7 @@ public:
     void equipWeapon(Weapon weapon);
     float attack();
 
-    virtual string instanceOf()
+    virtual string instanceOf() const
     {
         return "entity";
     }

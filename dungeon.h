@@ -5,6 +5,7 @@
 #include <fstream>
 #include <string>
 #include "entity.h"
+#include <vector>
 
 using namespace std;
 
@@ -14,6 +15,7 @@ public:
     char dungeonMap[40][40];
     int width;
     int height;
+    vector<Entity*> entities;
 
     Dungeon(const char* path)
     {
@@ -48,6 +50,7 @@ public:
     }
 
     bool spawn(string entityName, Entity* entity);
+    void move(char dir, Entity* entity);
 };
 
 

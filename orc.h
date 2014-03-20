@@ -24,7 +24,7 @@ public:
 
     float attack();
 
-    string instanceOf()
+    string instanceOf() const
     {
         return "orc";
     }
