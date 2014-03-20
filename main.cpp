@@ -10,6 +10,7 @@ using namespace std;
 
 int main()
 {
+	cout<<"Starting game"<<endl;
     Dungeon* dung = new Dungeon("map.txt");
     vector<Entity> entities;
     entities.push_back(Orc("fsdfsd", 100, 1.2));
