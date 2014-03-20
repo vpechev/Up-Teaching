@@ -9,6 +9,7 @@ using namespace std;
 
 int main()
 {
+	cout<<"In home changes"<<endl;
     Dungeon* dung = new Dungeon("map.txt");
     Hero* hero = new Hero("Huko", "The programmer", 100);
 
