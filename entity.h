@@ -38,6 +38,11 @@ public:
         return "entity";
     }
 
+    string test()
+    {
+        return "test";
+    }
+
 };
 
 

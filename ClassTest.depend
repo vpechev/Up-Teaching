@@ -60,7 +60,7 @@
 	"orc.h"
 	<typeinfo>
 
-1395099506 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\dungeon.cpp
+1395099802 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\dungeon.cpp
 	"dungeon.h"
 	"hero.h"
 	"orc.h"
@@ -73,14 +73,14 @@
 	"entity.h"
 	<vector>
 
-1395098674 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
+1395321284 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
 	<string>
 	"weapon.cpp"
 
 1394734997 z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
 	<string>
 
-1395089631 z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.h
+1395321330 z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.h
 	<string>
 	"entity.h"
 
@@ -97,7 +97,7 @@
 	<ctime>
 	<iostream>
 
-1394736033 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.cpp
+1395321225 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.cpp
 	<string>
 	"entity.h"
 

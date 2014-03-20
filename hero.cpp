@@ -15,4 +15,6 @@ public:
     {
         this->nickname = nickname;
     }
+
+    string getNickname();
 };

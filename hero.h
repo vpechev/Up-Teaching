@@ -23,6 +23,11 @@ public:
     {
         return "hero";
     }
+
+    string getNickname()
+    {
+        return this->nickname;
+    }
 };
 
 #endif // HERO_H_INCLUDED

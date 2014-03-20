@@ -9,10 +9,11 @@ using namespace std;
 
 int main()
 {
-	cout<<"In home changes"<<endl;
+	Hero* heroes = new Hero[100];
+	heroes[0] = Hero("Huki", "The cool guy", 200);
+	cout<<heroes[0].getNickname()<<endl;
     Dungeon* dung = new Dungeon("map.txt");
     Hero* hero = new Hero("Huko", "The programmer", 100);
-
     dung->spawn(hero->name, hero);
     dung->printMap();
 
