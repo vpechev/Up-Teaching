@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class Hero : public Entity
+class Hero
 {
 private:
     string nickname;

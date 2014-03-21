@@ -9,15 +9,5 @@ using namespace std;
 
 int main()
 {
-    Dungeon* dung = new Dungeon("map.txt");
-    Hero* hero = new Hero("Huko", "The programmer", 100);
-
-    dung->spawn(hero->name, hero);
-    dung->printMap();
-
-    dung->move('d', hero);
-
-    cout<<endl;
-    dung->printMap();
     return 0;
 }
