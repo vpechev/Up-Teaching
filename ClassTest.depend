@@ -73,14 +73,14 @@
 	"entity.h"
 	<vector>
 
-1395321284 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
+1395353942 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
 	<string>
 	"weapon.cpp"
 
 1394734997 z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
 	<string>
 
-1395321330 z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.h
+1395353918 z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.h
 	<string>
 	"entity.h"
 
@@ -97,11 +97,11 @@
 	<ctime>
 	<iostream>
 
-1395321225 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.cpp
+1395345387 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.cpp
 	<string>
 	"entity.h"
 
-1395099698 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
+1395353886 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
 	<iostream>
 	"entity.h"
 	"hero.h"

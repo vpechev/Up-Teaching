@@ -28,6 +28,11 @@ public:
     {
         return this->nickname;
     }
+
+    float attack()
+    {
+        return 3;
+    }
 };
 
 #endif // HERO_H_INCLUDED

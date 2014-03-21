@@ -31,7 +31,7 @@ public:
     bool takeHealing(int healingPoints);
     bool hasWeapon();
     void equipWeapon(Weapon weapon);
-    float attack();
+    virtual float attack();
 
     virtual string instanceOf() const
     {
