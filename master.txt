@@ -1,1 +1,10 @@
-fsdfsdfsdfsdfsdf
+git clone <REPOSITORY URL>
+
+
+git add <file to add>
+
+
+git commit -m "message"
+
+
+git push
