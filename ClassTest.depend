@@ -115,3 +115,17 @@
 1394734997 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
 	<string>
 
+1395402635 source:c:\huko\up-teaching\entity.cpp
+	"entity.h"
+	<string>
+
+1395402842 c:\huko\up-teaching\entity.h
+	<string>
+	"weapon.h"
+
+1395402382 c:\huko\up-teaching\weapon.h
+	<string>
+
+1395402294 source:c:\huko\up-teaching\main.cpp
+	<iostream>
+

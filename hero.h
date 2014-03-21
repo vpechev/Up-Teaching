@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class Hero
+class Hero : public Entity
 {
 private:
     string nickname;
@@ -23,6 +23,7 @@ public:
     {
         return "hero";
     }
+
 };
 
 #endif // HERO_H_INCLUDED

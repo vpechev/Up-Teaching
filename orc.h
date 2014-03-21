@@ -3,7 +3,7 @@
 
 #include "entity.h"
 
-class Orc
+class Orc : public Entity
 {
 private:
     float berserk_factor;
