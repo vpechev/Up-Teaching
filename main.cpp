@@ -7,22 +7,44 @@
 
 using namespace std;
 
+class B
+{
+public:
+
+    string lastName;
+    B() {}
+    B(string name) : lastName(name) {}
+    ~B()
+    {
+        cout<<"Destructor of B "<<this->lastName<<endl;
+    }
+
+};
+
+class A
+{
+public:
+    string name;
+    B* b;
+    A(string name) : name(name)
+    {
+        b = new B("Stoykov");
+    }
+    ~A()
+    {
+        cout<<"Destructor of A "<<this->name<<endl;
+        delete b;
+    }
+};
+
 int main()
 {
+    A ob("test1");
+    int b = 5;
+
+    cout<<"Outside If"<<endl;
     Entity* ent = new Hero("Huko", "Addd", 100);
     ent->equipWeapon(Weapon("sword", 10 , 1));
-    cout<<ent->attack()<<endl;
-//	Hero* heroes = new Hero[100];
-//	heroes[0] = Hero("Huki", "The cool guy", 200);
-//	cout<<heroes[0].getNickname()<<endl;
-//    Dungeon* dung = new Dungeon("map.txt");
-//    Hero* hero = new Hero("Huko", "The programmer", 100);
-//    dung->spawn(hero->name, hero);
-//    dung->printMap();
-//
-//    dung->move('d', hero);
-//
-//    cout<<endl;
-//    dung->printMap();
+
     return 0;
 }
