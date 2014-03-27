@@ -8,10 +8,12 @@ using namespace std;
 
 class Entity
 {
-public:
+private:
     Weapon weapon;
     string name;
     int health;
+
+public:
 
     Entity() {}
 

@@ -7,9 +7,10 @@ using namespace std;
 
 class Weapon
 {
-public:
+private:
     string type;
     int damage;
+public:
 
     Weapon() {}
 

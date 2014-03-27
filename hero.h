@@ -19,11 +19,6 @@ public:
         this->nickname = nickname;
     }
 
-    string instanceOf() const
-    {
-        return "hero";
-    }
-
 };
 
 #endif // HERO_H_INCLUDED
