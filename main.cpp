@@ -7,44 +7,14 @@
 
 using namespace std;
 
-class B
-{
-public:
-
-    string lastName;
-    B() {}
-    B(string name) : lastName(name) {}
-    ~B()
-    {
-        cout<<"Destructor of B "<<this->lastName<<endl;
-    }
-
-};
-
-class A
-{
-public:
-    string name;
-    B* b;
-    A(string name) : name(name)
-    {
-        b = new B("Stoykov");
-    }
-    ~A()
-    {
-        cout<<"Destructor of A "<<this->name<<endl;
-        delete b;
-    }
-};
 
 int main()
 {
-    A ob("test1");
-    int b = 5;
+    Entity* hero = new Hero("Niki", "The hammer", 100);
+    Weapon weap("sword", 50, 1);
 
-    cout<<"Outside If"<<endl;
-    Entity* ent = new Hero("Huko", "Addd", 100);
-    ent->equipWeapon(Weapon("sword", 10 , 1));
-
+    hero->equipWeapon(weap);
+    //delete weap;
+    cout<<hero->weapon.type<<endl;
     return 0;
 }

@@ -30,7 +30,7 @@ public:
     void takeDamage(float damagePoints);
     bool takeHealing(int healingPoints);
     bool hasWeapon();
-    void equipWeapon(Weapon weapon);
+    void equipWeapon(const Weapon& weapon);
     virtual float attack();
 
     virtual string instanceOf() const

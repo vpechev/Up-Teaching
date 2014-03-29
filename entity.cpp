@@ -39,7 +39,7 @@ bool Entity::hasWeapon()
     return isEquipped;
 }
 
-void Entity::equipWeapon(Weapon weapon)
+void Entity::equipWeapon(const Weapon& weapon)
 {
     this->isEquipped = true;
     this->weapon = weapon;
