@@ -34,8 +34,10 @@
 		</Compiler>
 		<Unit filename="entity.cpp" />
 		<Unit filename="entity.h" />
+		<Unit filename="hero.cpp" />
 		<Unit filename="hero.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="orc.cpp" />
 		<Unit filename="orc.h" />
 		<Unit filename="weapon.h" />
 		<Extensions>
@@ -43,6 +45,15 @@
 			<envvars />
 			<debugger />
 			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

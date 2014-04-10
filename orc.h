@@ -9,8 +9,9 @@ private:
     float berserk_factor;
 
 public:
+    Orc() {}
 
-    Orc(string name, float health, float berserk) : Entity(name, health)
+    Orc(string name, int health, float berserk, int x, int y) : Entity(name, health, x, y)
     {
         if(berserk > 2)
             berserk = 2;
@@ -20,9 +21,9 @@ public:
         this->berserk_factor = berserk;
     }
 
-    Orc() {}
 
-    float attack();
+    virtual int attack();
+    virtual string instanceOf() const { return "orc"; }
 
 };
 

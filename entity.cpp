@@ -21,9 +21,19 @@ void Entity::takeHealing(int healPoints)
     this->health += healPoints;
 }
 
-void Entity::equipWeapon(Weapon* weap)
+void Entity::equipWeapon(const Weapon& weap)
 {
     this->weapon = weap;
+    this->isEquiped = true;
+}
+
+bool Entity::move(int x, int y)
+{
+    /** TODO: Make sure the place is free before moving **/
+    this->x+=x;
+    this->y+=y;
+
+    return true;
 }
 
 

@@ -73,21 +73,21 @@
 	"entity.h"
 	<vector>
 
-1397145071 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
+1397154469 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
 	<string>
 	"weapon.h"
 
 1394734997 z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
 	<string>
 
-1397144613 z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.h
+1397151995 z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.h
 	<string>
 	"entity.h"
 
-1395089638 z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.h
+1397152765 z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.h
 	"entity.h"
 
-1397145017 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.cpp
+1397155767 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.cpp
 	"entity.h"
 	<string>
 
@@ -98,15 +98,21 @@
 	<ctime>
 	<iostream>
 
-1394736033 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.cpp
-	<string>
-	"entity.h"
-
-1397145405 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
-	<iostream>
+1397148778 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.cpp
 	"hero.h"
 
-1394735356 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.cpp
+1397157964 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
+	<iostream>
+	<vector>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	"map.h"
+	"entity.h"
+	"hero.h"
+	"orc.h"
+
+1397151623 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.cpp
 	"orc.h"
 
 1394734997 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.cpp
@@ -126,7 +132,11 @@
 1395402294 source:c:\huko\up-teaching\main.cpp
 	<iostream>
 
-1397145194 z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.h
+1397151623 z:\niki si\c++ projects\up teaching\up teaching\classtest\weapon.h
 	<string>
 	<iostream>
+
+1397157929 z:\niki si\c++ projects\up teaching\up teaching\classtest\map.h
+	<iostream>
+	"entity.h"
 
