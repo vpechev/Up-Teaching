@@ -9,9 +9,12 @@ using namespace std;
 class Entity
 {
 private:
-    Weapon weapon;
+    Weapon* weapon;
     string name;
     int health;
+
+protected:
+    int test;
 
 public:
 
@@ -26,7 +29,23 @@ public:
     bool isAlive();
     void takeDamage(float damage);
     void takeHealing(int healPoints);
-    void equipWeapon(Weapon weap);
+    void equipWeapon(Weapon* weap);
+
+    /** GETTERS **/
+    int getHealth() const
+    {
+        return this->health;
+    }
+
+    string getName() const
+    {
+        return this->name;
+    }
+
+    Weapon* getWeapon() const
+    {
+        return this->weapon;
+    }
 
 };
 

@@ -2,6 +2,7 @@
 #define WEAPON_H_INCLUDED
 
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -13,11 +14,21 @@ private:
 public:
 
     Weapon() {}
+    ~Weapon()
+    {
+        cout<<"Destructor called"<<endl;
+    }
 
     Weapon(string type, int damage)
     {
         this->type = type;
         this->damage = damage;
+    }
+
+    /** GETTERS */
+    string getType() const
+    {
+        return this->type;
     }
 };
 

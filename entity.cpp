@@ -21,7 +21,7 @@ void Entity::takeHealing(int healPoints)
     this->health += healPoints;
 }
 
-void Entity::equipWeapon(Weapon weap)
+void Entity::equipWeapon(Weapon* weap)
 {
     this->weapon = weap;
 }
