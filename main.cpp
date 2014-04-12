@@ -1,41 +1,15 @@
 #include <iostream>
-#include <vector>
-#include <stdlib.h>
-#include <time.h>
-#include <math.h>
-#include "map.h"
-#include "entity.h"
-#include "hero.h"
-#include "orc.h"
+#include "number.h"
 
 using namespace std;
 
-Map* board = new Map();
-
-string generateRandomString(int length)
-{
-    string charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-    string result;
-    result.resize(length);
-
-    for(int i = 0; i < length; i++)
-        result[i] = charset[rand() % charset.length()];
-
-    return result;
-}
-
 int main()
 {
-    srand(time(NULL));
-    Entity* hero = new Hero("Niki", 100, 1, 2);
-    Weapon* weap = new Weapon("axe", 20);
-    hero->equipWeapon(*weap);
-
-    Entity* enemy = new Orc(generateRandomString(5), 100, 1.2, 1, 1);
-    board->addEntity(enemy);
-
-    enemy->move(1, 0);
-
-    cout<<board->getEntity(2,1)->getName()<<endl;
+    Number* number = new Number(5);
+    Number* number2 = new Number(10);
+    *number+=*number2;
+    Number b = *number + *number2;
+    *number+=-4;
+    cout<<*number<<endl<<b<<endl;
     return 0;
 }

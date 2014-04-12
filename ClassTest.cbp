@@ -34,14 +34,11 @@
 		</Compiler>
 		<Unit filename="entity.cpp" />
 		<Unit filename="entity.h" />
-<<<<<<< HEAD
-		<Unit filename="fight.cpp" />
-=======
 		<Unit filename="hero.cpp" />
->>>>>>> test/home
 		<Unit filename="hero.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="map.h" />
+		<Unit filename="number.h" />
 		<Unit filename="orc.cpp" />
 		<Unit filename="orc.h" />
 		<Unit filename="weapon.h" />

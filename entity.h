@@ -52,6 +52,8 @@ public:
     /** SETTERS **/
     void setX(int x) { this->x = x;}
     void setY(int y) { this->y = y;}
+
+    /** OPERATORS **/
 };
 
 
