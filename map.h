@@ -22,6 +22,12 @@ public:
         entities[entity->getX() + entity->getY() * 10] = entity;
     }
 
+//    void move(int x, int y,Entity* ent)
+//    {
+//        entities[ent->getX() + ent->getY() * 10] = NULL;
+//        entities[x + y * 10] = ent;
+//    }
+
     Entity* getEntity(int x, int y) const { return entities[x + y * 10]; }
 };
 

@@ -6,6 +6,7 @@
 
 using namespace std;
 
+class Map;
 class Entity
 {
 private:
@@ -51,7 +52,7 @@ public:
     /** SETTERS **/
     void setX(int x) { this->x = x;}
     void setY(int y) { this->y = y;}
-
 };
+
 
 #endif // ENTITY_H_INCLUDED

@@ -30,9 +30,9 @@ void Entity::equipWeapon(const Weapon& weap)
 bool Entity::move(int x, int y)
 {
     /** TODO: Make sure the place is free before moving **/
+//    board.move(this->x + x, this->y + y, this);
     this->x+=x;
     this->y+=y;
-
     return true;
 }
 

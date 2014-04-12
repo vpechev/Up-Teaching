@@ -73,7 +73,7 @@
 	"entity.h"
 	<vector>
 
-1397154469 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
+1397319379 z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.h
 	<string>
 	"weapon.h"
 
@@ -87,7 +87,7 @@
 1397152765 z:\niki si\c++ projects\up teaching\up teaching\classtest\orc.h
 	"entity.h"
 
-1397155767 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.cpp
+1397291806 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\entity.cpp
 	"entity.h"
 	<string>
 
@@ -101,7 +101,7 @@
 1397148778 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\hero.cpp
 	"hero.h"
 
-1397157964 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
+1397239813 source:z:\niki si\c++ projects\up teaching\up teaching\classtest\main.cpp
 	<iostream>
 	<vector>
 	<stdlib.h>
@@ -136,7 +136,7 @@
 	<string>
 	<iostream>
 
-1397157929 z:\niki si\c++ projects\up teaching\up teaching\classtest\map.h
+1397242011 z:\niki si\c++ projects\up teaching\up teaching\classtest\map.h
 	<iostream>
 	"entity.h"
 
