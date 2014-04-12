@@ -1,48 +1,57 @@
 #ifndef ENTITY_H_INCLUDED
 #define ENTITY_H_INCLUDED
 
-#include <string>
-#include "weapon.cpp"
+#include<string>
+#include "weapon.h"
 
 using namespace std;
 
+class Map;
 class Entity
 {
-public:
+private:
     Weapon weapon;
     string name;
-    float health;
+    int health;
     int x, y;
-    bool isEquipped = false;
+    bool isEquiped;
+
+public:
 
     Entity() {}
 
-    Entity(string name, float health)
+    Entity(string name, int health, int x, int y) : x(x), y(y)
     {
+        this->isEquiped = false;
         this->name = name;
         this->health = health;
-        x = 0;
-        y = 0;
     }
 
-    float getHealth();
     bool isAlive();
-    void takeDamage(float damagePoints);
-    bool takeHealing(int healingPoints);
-    bool hasWeapon();
-    void equipWeapon(const Weapon& weapon);
-    virtual float attack();
+    void takeDamage(float damage);
+    void takeHealing(int healPoints);
+    void equipWeapon(const Weapon& weap);
+    bool move(int x, int y);
 
-    virtual string instanceOf() const
-    {
-        return "entity";
-    }
+    virtual int attack() = 0;
+    virtual string instanceOf() const = 0;
 
-    string test()
-    {
-        return "test";
-    }
+    /** GETTERS **/
+    int getX() const { return x; }
 
+    int getY() const { return y; }
+
+    string getName() const { return name; }
+
+    bool getIsEquiped() const { return this->isEquiped; }
+
+    int getHealth() const { return this->health; }
+
+    Weapon getWeapon() const { return this->weapon; }
+
+    /** SETTERS **/
+    void setX(int x) { this->x = x;}
+    void setY(int y) { this->y = y;}
 };
 
 

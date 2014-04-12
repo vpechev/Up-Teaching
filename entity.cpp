@@ -1,54 +1,40 @@
 #include "entity.h"
+#include <string>
 
 using namespace std;
 
-float Entity::getHealth()
-{
-    return this->health;
-}
-
 bool Entity::isAlive()
 {
-    return (health > 0);
+    return (this->health > 0);
 }
 
-void  Entity::takeDamage(float damagePoints)
+void Entity::takeDamage(float damage)
 {
-    if(isAlive())
-        this->health -= damagePoints;
-
-    if(this->health < 0)
-        this->health = 0;
+    this->health -= damage;
 }
 
-bool Entity::takeHealing(int healingPoints)
+void Entity::takeHealing(int healPoints)
 {
-    if(!isAlive())
-        return false;
+    if(!this->isAlive())
+        return;
 
-    this->health += healingPoints;
+    this->health += healPoints;
+}
 
-    if(this->health > 100)
-        this->health = 100;
+void Entity::equipWeapon(const Weapon& weap)
+{
+    this->weapon = weap;
+    this->isEquiped = true;
+}
 
+
+bool Entity::move(int x, int y)
+{
+    /** TODO: Make sure the place is free before moving **/
+//    board.move(this->x + x, this->y + y, this);
+    this->x+=x;
+    this->y+=y;
     return true;
 }
 
-bool Entity::hasWeapon()
-{
-    return isEquipped;
-}
 
-void Entity::equipWeapon(const Weapon& weapon)
-{
-    this->isEquipped = true;
-    this->weapon = weapon;
-}
-
-float Entity::attack()
-{
-    if(isEquipped)
-        return this->weapon.damage;
-
-    return 0.0f;
-}
