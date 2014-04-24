@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="complex.h" />
 		<Unit filename="entity.cpp" />
 		<Unit filename="entity.h" />
 		<Unit filename="hero.cpp" />
