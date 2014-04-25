@@ -48,6 +48,11 @@ public:
         this->value = n;
     }
 
+    int operator () (int a, int b)
+    {
+        return a + b;
+    }
+
     friend ostream& operator<<(ostream& out, const Number& n)
     {
         out<<n.value;

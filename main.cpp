@@ -15,7 +15,9 @@ int main()
 //    cout<<*number<<endl<<b<<endl;
 
     Number b;
-    //cin>>b;
+    int result = b(2, 3);
+    cout<<result<<endl;
+//    cin>>b;
     Number test = 5 + 7;
     cout<<test<<endl;
     return 0;
