@@ -1,41 +1,52 @@
 #ifndef ENTITY_H_INCLUDED
 #define ENTITY_H_INCLUDED
 
-#include <string>
-#include "weapon.cpp"
+#include<string>
+#include "weapon.h"
 
 using namespace std;
 
 class Entity
 {
-public:
+private:
+    Weapon* weapon;
     string name;
-    float health;
-    Weapon weapon;
-    bool isEquipped = false;
+    int health;
+
+protected:
+    int test;
+
+public:
 
     Entity() {}
 
-    Entity(string name, float health)
+    Entity(string name, int health)
     {
         this->name = name;
         this->health = health;
     }
 
-    float getHealth();
     bool isAlive();
-    void takeDamage(float damagePoints);
-    bool takeHealing(int healingPoints);
-    bool hasWeapon();
-    void equipWeapon(Weapon weapon);
-    float attack();
+    void takeDamage(float damage);
+    void takeHealing(int healPoints);
+    void equipWeapon(Weapon* weap);
 
-    virtual string instanceOf()
+    /** GETTERS **/
+    int getHealth() const
     {
-        return "entity";
+        return this->health;
+    }
+
+    string getName() const
+    {
+        return this->name;
+    }
+
+    Weapon* getWeapon() const
+    {
+        return this->weapon;
     }
 
 };
-
 
 #endif // ENTITY_H_INCLUDED

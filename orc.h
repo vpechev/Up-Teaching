@@ -24,11 +24,6 @@ public:
 
     float attack();
 
-    string instanceOf()
-    {
-        return "orc";
-    }
-
 };
 
 #endif // ORC_H_INCLUDED
