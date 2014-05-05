@@ -6,22 +6,23 @@
 
 using namespace std;
 
+class Map;
 class Entity
 {
 private:
-    Weapon* weapon;
+    Weapon weapon;
     string name;
     int health;
-
-protected:
-    int test;
+    int x, y;
+    bool isEquiped;
 
 public:
 
     Entity() {}
 
-    Entity(string name, int health)
+    Entity(string name, int health, int x, int y) : x(x), y(y)
     {
+        this->isEquiped = false;
         this->name = name;
         this->health = health;
     }
@@ -29,24 +30,31 @@ public:
     bool isAlive();
     void takeDamage(float damage);
     void takeHealing(int healPoints);
-    void equipWeapon(Weapon* weap);
+    void equipWeapon(const Weapon& weap);
+    bool move(int x, int y);
+
+    virtual int attack() = 0;
+    virtual string instanceOf() const = 0;
 
     /** GETTERS **/
-    int getHealth() const
-    {
-        return this->health;
-    }
+    int getX() const { return x; }
 
-    string getName() const
-    {
-        return this->name;
-    }
+    int getY() const { return y; }
 
-    Weapon* getWeapon() const
-    {
-        return this->weapon;
-    }
+    string getName() const { return name; }
 
+    bool getIsEquiped() const { return this->isEquiped; }
+
+    int getHealth() const { return this->health; }
+
+    Weapon getWeapon() const { return this->weapon; }
+
+    /** SETTERS **/
+    void setX(int x) { this->x = x;}
+    void setY(int y) { this->y = y;}
+
+    /** OPERATORS **/
 };
+
 
 #endif // ENTITY_H_INCLUDED

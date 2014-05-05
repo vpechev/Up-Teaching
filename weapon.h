@@ -14,10 +14,6 @@ private:
 public:
 
     Weapon() {}
-    ~Weapon()
-    {
-        cout<<"Destructor called"<<endl;
-    }
 
     Weapon(string type, int damage)
     {
@@ -26,9 +22,22 @@ public:
     }
 
     /** GETTERS */
+
     string getType() const
     {
         return this->type;
+    }
+
+    int getDamage() const
+    {
+        return damage;
+    }
+
+    /** SETTERS **/
+
+    void setDamage(int value)
+    {
+        this->damage = value;
     }
 };
 

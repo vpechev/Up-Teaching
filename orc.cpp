@@ -2,10 +2,10 @@
 
 using namespace std;
 
-float Orc::attack()
+int Orc::attack()
 {
-    if(isEquipped)
-        return this->weapon.damage * berserk_factor;
+    if(getIsEquiped())
+        return this->getWeapon().getDamage() * berserk_factor;
 
-    return 0.0f;
+    return 0;
 }

@@ -1,27 +1,24 @@
 #include <iostream>
-#include "hero.h"
+#include "number.h"
 
 using namespace std;
 
 int main()
 {
-//	cout<<"Starting game"<<endl;
-//    Dungeon* dung = new Dungeon("map.txt");
-//    vector<Entity> entities;
-//    entities.push_back(Orc("fsdfsd", 100, 1.2));
-//    Hero* hero = new Hero("Huko", "The programmer", 100);
-//    Orc* orc = new Orc("Orketo", 50, 1.2);
-//    dung->spawn("hero", hero);
-//    dung->printMap();
-//    dung->spawn("orc", orc);
-//    dung->printMap();
-    Hero* hero = new Hero("Niki", 100);
-    cout<<hero->getHealth()<<endl;
-    hero->takeDamage(20);
-    cout<<hero->getHealth()<<endl;
+//    Number* number = new Number(5);
+//    Number* number2 = new Number(10);
+//    *number+=number2;
+//    cout<<*number<<endl;
+//    Number b = *number + *number2;
+//    b+=number;
+//    *number+=-4;
+//    cout<<*number<<endl<<b<<endl;
 
-    Weapon* weapon = new Weapon("axe", 50);
-    hero->equipWeapon(weapon);
-    cout<<hero->getWeapon()->getType()<<endl;
+    Number b;
+    int result = b(2, 3);
+    cout<<result<<endl;
+//    cin>>b;
+    Number test = 5 + 7;
+    cout<<test<<endl;
     return 0;
 }
